@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*
+    Take input frpm user - Bill amount, Age
+    if Bill amount 3500+    
+            if age > 18 = 12 % discount
+            if age < 18 = 10 % discount
+
+    if Bill amount 2500+ > 5% discount
+
+
+    Alert The Total amount to the user 
+    */
+
+    function totalBill(){
+            var finalamount = Number(prompt("Enter The Final  amount "))
+            var Age = Number(prompt("Enter Your Age "))
+
+            if (!finalamount || !Age){
+                alert("Please Enter valid Amount OR Age")
+            }else{
+
+                if(finalamount > 3500 && Age > 18){
+                  //3501+  && 18+
+                    var total = finalamount - (finalamount * 12/100)
+                    alert("Your Total Bill is = " + total)
+                }
+                else if(finalamount > 3500 && Age < 18){
+                    //3501+  && <18
+                    var total = finalamount - (finalamount * 10/100)
+                    alert("Your Total Bill is = " + total)
+                 
+                }
+                else if(finalamount > 2500 ){
+                    //2501 - 3500
+                    var total = finalamount - (finalamount * 5/100)
+                    alert("Your Total Bill is = " +total)
+
+                }
+                else{
+                    var total = finalamount
+                    alert("Your Total Bill is = " +total)
+
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="totalBill()">  Total Bill</button>
+</body>
+</html>
