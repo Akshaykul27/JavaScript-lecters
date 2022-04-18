@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb_ON_OFF</title>
+    <script>
+        function turnOn(){
+            document.getElementById("bulbonoff").src =  "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+        function turnOff(){
+            document.getElementById("bulbonoff").src =  "https://www.w3schools.com/js/pic_bulboff.gif"
+        }
+//========================================================
+        var bulbisOn = false;
+
+        function turnonoff(){
+            if(bulbisOn == false){
+                document.getElementById("bulbonoff1").src =  "https://www.w3schools.com/js/pic_bulbon.gif" 
+
+                bulbisOn = true;
+            }
+
+            else{
+                document.getElementById("bulbonoff1").src =  "https://www.w3schools.com/js/pic_bulboff.gif"
+
+                bulbisOn = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="bulbonoff" src="  https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        <br>
+        <br>
+        <button  onclick="turnOn()">Turn ON</button>
+        <button  onclick="turnOff()">Turn OFF</button>
+    
+    </div>
+    <br>
+<!--================================================= -->
+    <br>
+    <div>
+        <img id="bulbonoff1" src="  https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        <br>
+        <br>
+        <button  onclick="turnonoff()">Turn ON - OFF</button>
+        <!-- <button  onclick="turnOff()">Turn OFF</button> -->
+    
+    </div>
+    
+
+
+</body>
+</html>
+
+
+<!-- 
+    https://www.w3schools.com/js/pic_bulbon.gif
+  https://www.w3schools.com/js/pic_bulboff.gif 
+-->
