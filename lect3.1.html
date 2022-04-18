@@ -18,10 +18,12 @@
     5. assignment
 
     <script>
-    // Arithmatic Operators: +, _, *, /, %, ++, --
+ //======================================================== 
+    // Arithmatic Operators: +, _, *, /, %, ++, --, **
+//======================================================== 
 
-    var a = 10
-    var b = 5
+    // var a = 10
+    // var b = 5
     // pre increment: ++a (Increments value first then access value)
     // post increment = a++ (access value first then increment)
 
@@ -33,6 +35,7 @@
     // console.log(a-d)//5
     // console.log(a*d)//150
     // console.log(a/d)//2
+    // console.log(2 ** 3)  // 2^3 = 8
 
     // console.log(a++)//10
     // console.log(++a)//11
@@ -47,14 +50,16 @@
 
 //======================================================== 
 /*Relational Operators: <, >, <=, +=>,
+//======================================================== 
+
  ==(Equality operator), 
  != (nonEquality operator), 
  === (Identical Operator), 
  !==( NonIdentical Operator)*/
 
 // ans. in true or false
-    var a = 10
-    var b = 5
+    // var a = 10
+    // var b = 5
 
     // console.log(a > b)// true
     // console.log(a < b)// false
@@ -64,8 +69,6 @@
     // console.log(a != b)// true
     // console.log(a === b)// false
     // console.log(a !== b)// true
-
-
 
 
 /* <!-- 
@@ -90,19 +93,141 @@
 
 //**************VIMP*******VIMP****VIMP******VIMP***VIMP
 // Equality(==) not checking 0(type=number) and "0"(string) and gives true as an asnwer
-if(0 == "0"){
-console.log("true value")  
-}else
-console.log("flase value")
+// if(0 == "0"){
+// console.log("true value")  
+// }else
+// console.log("flase value")
 
-// indentical(===)    checking types also of 0(numver) and "0" (string) so, it gives false as an answer
-if(0 === "0"){  
-console.log("true value")  // true value
-}else
-console.log("flase value")
+// // indentical(===)    checking types also of 0(numver) and "0" (string) so, it gives false as an answer
+// if(0 === "0"){  
+// console.log("true value")  // true value
+// }else
+// console.log("flase value")
 
 //**************VIMP*******VIMP****VIMP******VIMP***VIMP
 
+//========================================================
+//  Logical Operators (&&, ||, !)
+//========================================================
+
+// var x = true
+// var y = false
+
+/*
+   # Logiacla &&(Both condtion should be true for for overall codition true)
+
+    T && T = T
+    T && F = F
+    F && T = F
+    F && F = F
+
+   # Logiacla ||(atleast one condtion should be true for for overall codition true)
+
+    T || T = T
+    T || F = T
+    F || T = T
+    F || F = F
+
+
+    # Negation (!)
+
+    T : F
+    F : T
+*/
+
+// console.log(x && y) // false
+
+// console.log(x || y) // True
+
+// console.log(!x) // flase
+
+//======================================================== 
+// Assignment Operator(=, +=, -=, *=, /=)
+//======================================================== 
+ 
+    // var a = 10
+    
+    // a += 2 // a= a+2
+    // console.log(a)  //12
+
+    // a -= 2 // a= a-2
+    // console.log(a)  //8
+
+    // a *= 2 // a= a*2
+    // console.log(a)  //20
+
+    // a /= 2 // a= a/2
+    // console.log(a)  //5
+
+    // a **= 2 // a= a ** 2 
+    // console.log(a)  //100
+
+
+
+//========================================================
+//Bitwise operator (&, |, <<, >>, ~(NOT), ^(XOR))
+//========================================================
+
+        var a = 10
+        var b = 5
+        /*
+            10: 1010
+             5: 0101
+
+            10 & 5 =  0000 = 0
+        */
+        console.log(a & b) // 0
+        
+        /*
+            10: 1010
+             5: 0101
+
+            10 | 5 =  1111 = 15
+        */
+        console.log(a | b) // 15
+
+
+        /*
+            10: 1010
+            ~10 = 0101 = 1010 + 1 = 1011 = 11(minus)
+        */
+
+        /* 2s compliment : 
+             1. 1s Compliment : similar to NOT operation
+             2. add 1 to the LSB
+        */
+        console.log("~10 =" + ~a ) // -11
+
+        /*
+           0 ^ 0 = 0
+           0 ^ 1 = 1
+           1 ^ 0 = 1
+           1 ^ 1 = 0
+        */
+        /*
+           10 = 1010
+           05 = 0101
+
+           10 ^ 5 = 1111 = 15
+        */
+        console.log(a ^ b) // 15
+
+        /*
+            10= 1010
+            10 >> 2 = 0101 => 0010 = 2
+        */
+        console.log(a >> 2) //  2
+
+        /*
+            10=       0000 1010
+            10 << 2 = 0001 0100 => 
+                      0010 1000  // 40
+        */
+        console.log( a << 2) // 40
+
+
+
+//======================================================== 
 
 </script>
      
