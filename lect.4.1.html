@@ -1,0 +1,67 @@
+<!-- Var, Let, Const, Block Scope, Global Scop<!DOCTYPE html> -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vae, let, const, </title>
+</head>
+<body>
+    <script>
+        // var x // declaration
+        // var x = 5 // initialization
+        // x = 10 // assinment
+
+        /*
+          1. var
+            - re-declaration is allowed
+            - re-initialization is allowed
+            - re-assignment is allowed 
+            - Globle Scope ***
+
+          2. let
+            - re-declaration is NOT allowed
+            - re-initialization is also NOT allowed
+            - re-assignment is allowed 
+            - Block Scope ***
+
+          3. const
+            - re-declaration is NOT allowed
+            - re-initialization is also NOT allowed
+            - re-assignment is  not  allowed 
+            - Block Scope ***
+        */
+//========================================
+// globle scope = outside scope(braket) we can also access x 
+     
+//========================================
+// block scope = outside scope not accessble
+       
+//=======================================
+        // {
+        //         var x =5
+        //         x= 10
+        // }
+        // console.log(x)  // 10
+//-----------------------------------------
+        // {
+        //         let x =5
+        //         x= 10
+        // }
+        // console.log(x)  // X not defind
+//-----------------------------------------      
+        // {
+        //         const x =5
+        //         x= 10  // not allowed
+        // }
+        // console.log(x)  //error
+
+
+ //============================================
+ 
+ 
+
+    </script>
+</body>
+</html>

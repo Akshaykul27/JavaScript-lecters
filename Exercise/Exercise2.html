@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Var, let, Const </title>
+</head>
+<body>
+    <h2>JS Exercise =  var, let, Const </h2>
+
+    <script>
+        // let x = 5
+        // {   
+        //     console.log(x)  //5
+        // }
+//--------------------------------------------
+        // let x = 5
+        // {   x =10
+        //     console.log(x)  //10
+        // }
+//--------------------------------------------
+        // const z = 5
+        // {  
+        //     console.log(z)  //5
+        // }
+//--------------------------------------------
+        // const z = 5
+        // {  const z = 11
+        //     console.log(z)  //11
+        // }
+//--------------------------------------------
+        // const x = 5
+        // {   x = 10
+        //     console.log(x) // error: Assignment to constant variable
+        // }
+//-- Outer scope variable will be accessible by inner scope
+//-- only if there is no other declaration in the inner scope with the same variable name 
+
+//--------------------------------------------
+// let x=5
+// {
+//     console.log(x) //5
+// }
+// console.log(x) //5
+
+//--------------------------------------------
+
+// {   let x=5
+//     console.log(x) //5
+// }
+// console.log(x) // Error
+
+//--------------------------------------------
+// let x =10
+// {   let x=5
+//     console.log(x) //5
+// }
+// console.log(x) // 10
+
+//--------------------------------------------
+// let x =10
+// {   x=5
+//     console.log(x) //5
+// }
+// console.log(x) // 5
+
+//--------------------------------------------
+// const z =10
+// {   z=5  
+//     console.log(z) // const re assingment not allowd
+// }
+// console.log(z) // 
+
+//--------------------------------------------
+//  z =10    // by defoult var keyword
+// {   z=50  // re-assinment of z
+//     console.log(z) // 5
+// }
+// console.log(z) // 5
+
+//--------------------------------------------
+
+
+
+
+
+    </script>
+</body>
+</html>
