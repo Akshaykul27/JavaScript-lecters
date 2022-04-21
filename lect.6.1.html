@@ -38,14 +38,49 @@
 
         // console.log(y.toLowerCase());
 
-        // console.log(y[3]); //access charactor from index
+        // console.log(y[3]); //access charactor at index given index
+
+        // console.log(y.charAt(2)); //access charactor at index given index
 
         // console.log(y.indexOf('k')); // get first index  form charactor(first occurance)
 
         // console.log(y.lastIndexOf('k')); // get last index  form charactor(first occurance)
-
         
+        // console.log(y.indexOf('ku')); // 8
 
+        // console.log(y.indexOf('zz')); // -1 (not present)
+
+        // console.log(y.indexOf('k', 2)); // 8  =>  ('k' for searching index, 2 for from which index seaching we want to start)
+
+
+        // console.log(y.includes('kulkarni')) // present in let Y
+        // console.log(y.includes('vilas')) // absent in Y
+
+        // console.log(y.startsWith('akshay')); // true 
+
+        // console.log(y.endsWith('kulkarni')); // true
+        
+        // console.log(y.charCodeAt(0)); // ACII value
+        // console.log(y.replace('a', 'ta')); // a replace with ta
+        // console.log(y.replaceAll('a', 'A')); // all occurance replaced
+       
+        // console.log(y.replace('a', '')); // a replace with emty space
+        // console.log(y.replaceAll('a', '')); // all occurance replaced with empty space
+
+// Both replace() and replaceAll() dose not change original string
+
+        //   /ak/gi    // search for ak, 'g' and 'i' are flags  where , g=> globle search, i=> case insencitive
+        // console.log(y.match(/k/gi));
+
+        // console.log(y.search(/k/gi));
+
+        // let y1 = " family"
+        // console.log(y.concat(y1));
+        // //OR
+        // console.log(y + y1);
+
+        // console.log(y.slice(5, 9));
+        // console.log(y.slice(5, -1)); // -1 is last index, so its returns upto -2 index
 
     </script>
 
@@ -53,14 +88,26 @@
 </html>
 
 <!-- 
-    Property
+   # Property:
     length
 
 
 
-    Methods:
-    toUpperCase()
-    toLowerCase()
-    indexOf()
-    lastindexof()
+   # Methods:
+    toUpperCase() : uppercase
+    toLowerCase() :  lower case
+    indexOf() : first char. index
+    lastindexof() : last char. index
+    includes() : returns true if substring is present, else returns false
+    startWith(): 
+    endsWith():
+    charAt():
+    charCodeAt(): ACII value of charr
+    replace(): first parameter to match substring, second parameter is replace value(only replace first occurance)
+    replaceAll(): replace all occurance
+    regular expretion(regex): 
+    match()
+    search(): returns the count of all matched occurances
+    concat():mearge strings,  add two strings , can we done with also "+" operator 
+    slice(): divide strings , start required, end is optional, 
  -->
