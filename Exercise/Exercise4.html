@@ -20,8 +20,29 @@
         for (let i = 1; i <= num; i++){
             fact = fact* i
         }
-        console.log("Factorial = "+ fact)
-        
+        alert("Factorial = "+ fact)
+
+        function primenum(b){
+            let flag = 0
+            let c = b/2
+            if(b == 0  || b == 1){
+                return false
+            }
+            else{
+                for(let i=2; i<c; i++){
+                    if(b % i == 0){
+                        return false
+                    }
+                    return true
+                }
+            }
+        }
+        if(primenum(num) == true){
+            alert("prime number")
+        }
+        else{
+            alert("Not prime number")
+        }
         
 
     </script>
