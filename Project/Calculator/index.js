@@ -1,27 +1,165 @@
 var displayArea = document.getElementById('display')
 
-function isOprator(buttonText){
-    if(buttonText == '*' || buttonText == '/' || buttonText == '+' || buttonText == '-' || buttonText == '%' )
-        return  true
+function isOprator(buttonText) {
+    if (buttonText == '*' || buttonText == '/' || buttonText == '+' || buttonText == '-' || buttonText == '%')
+        return true
     else
         return false
 }
 
+//====================================================================================
+//  function buttonClicked(buttonText) {
+//     if (displayArea.innerText.length >= 24)
+//         return
+//     if (buttonText != 'CLR' && buttonText != 'DEL' && buttonText != '=') {
+//         if (displayArea.innerText === '0') {
+//             if (buttonText != '0' && buttonText != '00') {  // dont do anything if button click 0 or 00
+//                 if (buttonText == '.' || isOprator(buttonText)) { //if  button clicked is . or any oprators, then show it a 0 folloed by button clicked (Eg. 0.5, 0 + 5)
+//                     displayArea.innerText = displayArea.innerText + buttonText
+//                 } else {
+//                     displayArea.innerText = buttonText
+//                 }
+//             }
+//         } else {
 
-function buttonClicked( buttonText){
-    if(displayArea.innerText === '0'){
-        if(buttonText != '0' && buttonText != '00'){  // dont do anything if button click 0 or 00
-            if(buttonText == '.' || isOprator(buttonText)){ //if  button clicked is . or any oprators, then show it a 0 folloed by button clicked (Eg. 0.5, 0 + 5)
-                displayArea.innerText = displayArea.innerText + buttonText
-            }else{
-                displayArea.innerText = buttonText
-            }
-        }
-    }else{
-       if(isOprator(displayArea.innerText[displayArea.innerText.length - 1]) && isOprator(buttonText)){ // replace the operator
+//             if (
+//                 (isOprator(displayArea.innerText[displayArea.innerText.length - 1]) && isOprator(buttonText))
+//             ) { // replace the operator
+//                 // Replace the Operator
+//                 displayArea.innerText = displayArea.innerText.slice(0, -1) + buttonText
+//             } else {
+//                 displayArea.innerText = displayArea.innerText + buttonText
+//             }
 
-       } else{
-            displayArea.innerText = displayArea.innerText + buttonText
-        }
+//         }
+//     } else {
+//         if (buttonText === 'CLR') {
+//             displayArea.innerText = '0'
+//         } else if (buttonText === 'DEL') {
+//             displayArea.innerText = displayArea.innerText.slice(0, -1)
+//         } else if (buttonText === '=') {
+//             try {
+//                 displayArea.innerText = eval(displayArea.innerText)
+//             } catch (error) {
+//                 displayArea.innerText = '0'
+//             }
+//         }
+//     }
+
+// }
+
+//==================================================================================== 
+
+function buttonClicked(buttonText) {
+    if(displayArea.innerText.length >= 24)
+      return
+  
+    if (buttonText === "CLR") {
+      displayArea.innerText = "0"
+      return
     }
-}
+  
+    if (buttonText === "DEL") {
+      displayArea.innerText = displayArea.innerText.slice(0, -1)
+      return
+    }
+  
+    if (buttonText === "="){
+      try {
+        displayArea.innerText = eval(displayArea.innerText);
+      } catch (error) {
+        displayArea.innerText = 0;
+      }
+      return
+    }
+  
+    if (displayArea.innerText === "0") {
+      if (buttonText == "0" || buttonText == "00")
+        return
+  
+      if (buttonText == "." || isOperator(buttonText)) {
+        displayArea.innerText = '0' + buttonText;
+        return
+      }
+  
+      displayArea.innerText = buttonText;
+    } else {
+      if (
+        isOperator(displayArea.innerText[displayArea.innerText.length - 1]) &&
+        isOperator(buttonText)
+      ) {
+        displayArea.innerText =
+          displayArea.innerText.slice(0, -1) + buttonText
+        return
+      }
+  
+      displayArea.innerText = displayArea.innerText + buttonText;
+    }
+  }
+  
+ //====================================================================================
+
+  
+  // function buttonClicked(buttonText) {
+  //   if (displayArea.innerText.length >= 24) return;
+  
+  //   if (buttonText === "CLR") {
+  //     displayArea.innerText = "0";
+  //     return;
+  //   }
+  
+  //   if (buttonText === "DEL") {
+  //     displayArea.innerText = displayArea.innerText.slice(0, -1);
+  //     return;
+  //   }
+  
+  //   if (buttonText === "=") {
+  //     try {
+  //       displayArea.innerText = eval(displayArea.innerText);
+  //     } catch (error) {
+  //       displayArea.innerText = 0;
+  //     }
+  //     return;
+  //   }
+  
+  //   if (
+  //     (buttonText == "0" || buttonText == "00") &&
+  //     displayArea.innerText === "0"
+  //   )
+  //     return;
+  
+  //   if (
+  //     (buttonText == "." || isOperator(buttonText)) &&
+  //     displayArea.innerText === "0"
+  //   ) {
+  //     displayArea.innerText = "0" + buttonText;
+  //     return;
+  //   }
+  
+  //   if (
+  //     isOperator(buttonText) &&
+  //     isOperator(displayArea.innerText[displayArea.innerText.length - 1]) &&
+  //     displayArea.innerText !== "0"
+  //   ) {
+  //     displayArea.innerText = displayArea.innerText.slice(0, -1) + buttonText;
+  //   }
+  
+  //   if (displayArea.innerText === "0") {
+  //     displayArea.innerText = buttonText;
+  //   } else {
+  //     displayArea.innerText = displayArea.innerText + buttonText;
+  //   }
+  // }
+  
+
+  //====================================================================================
+
+
+  // let x = '2+3*'
+  // // console.log(isOperator(x[x.length - 1]))
+  
+  // console.log(x.slice(0,-1))
+  
+  // console.log(eval('7+8*2'))
+
+
