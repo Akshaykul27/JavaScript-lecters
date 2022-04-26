@@ -45,8 +45,47 @@
         // console.log(arr, !x);    // ['naveen','naveen']  true,
 
 //============================================================
+// Que.
+
+// Take input of bank balances of 5 acc. holder as input
+
+// if balance > 2L => add interest  of 10%  and deduct 0.2% maintainance charge
+
+// if balance > 1L => add interest  of 5%  and deduct 0.05% maintainance charge
+
+// if any balance less than or equal => add 4% interest
 
 
+// log/alert updated arra of balance
+
+let acc =[]
+for(let i=1; i< 6; i++ ){
+    acc[i] =Number (prompt("Enter acc. balance of holder number " + i))
+}
+console.log(acc);
+
+for(let i=1; i<6; i++){
+    if(acc[i] > 200000){
+        let interest = ((10/100)*acc[i])
+        let charges = ((0.2/100)*acc[i])
+
+        acc[i] = acc[i] + interest - charges
+    }
+    else if(acc[i] > 100000){
+        let interest = ((5/100)*acc[i])
+        let charges = ((0.05/100)*acc[i])
+
+        acc[i] = acc[i] + interest - charges
+    }
+    else{
+        let interest = ((4/100)*acc[i])
+
+        acc[i] = acc[i] + interest 
+
+    }
+}
+console.log(acc);
+10
 
     </script>
 </body>

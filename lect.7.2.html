@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array- String</title>
+</head>
+<body>
+    <h2>Arrays-String</h2>
+    <h2>================================================</h2>
+
+    <script>
+        let arr = ['aditi', 5, true, 'anurag']
+
+        // console.log(arr);
+        // console.log(arr.toString());
+        
+       // .join() - Convert array to string( cause not changes with original array)
+
+    //    console.log( arr.join( ' # '))  // concanating elements with the '#' with after every element
+
+        // .split() - convert string to arrays on the basis of the delimiter specified
+
+        // let str = 'vikas-vaishnavi-sweta-shreyas'
+        // let str2 = 'vikas'
+
+        // console.log(str.split('-')) // spliting on the basis of '-'
+        // console.log(str2.split('')) 
+
+
+        let str = 'javascript + HTML + CSS + Bootstrap'
+    // convert to array of all characters - use reverse method - join cgaracter back to form the string
+        
+        console.log(str.split('').reverse().join(''));
+
+    </script>
+</body>
+</html>
