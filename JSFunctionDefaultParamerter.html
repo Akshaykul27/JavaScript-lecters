@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Function Default Parameter</title>
+</head>
+<body>
+    <script>
+        // function calculateSum(a, b, c){
+        //     console.log(a,b,c);
+        //     console.log(a+ b+ c);
+        // }
+        // calculateSum(1, 2, 3)
+        // calculateSum(1345, 25345, 3345345)
+        // calculateSum(13, 2)// NaN = only 2 parameter sends | 3rd parameter is undefind | function fail
+        
+
+
+        // function abc(a, b=5){
+        //     console.log(a+ b);
+        // }
+        // // abc(12) // 17
+        // abc(12,10) // 32
+        // // console.log(3, 10); //3, 10
+        // console.log(3);  // 3, 5 | B=5 IT TSKES DEFAULT
+
+
+
+        // function calculateSum(a=0, b=0){ // default value is '0' for both arguments
+        //     console.log(a +b);
+        // }
+        // calculateSum()
+
+        
+        // function calculateSum(a=0, b=0, c=0){
+        //     console.log(a,b,c);
+        //     console.log(a+b+c);        }
+        // calculateSum(1, 2, 3)
+        // calculateSum(1345, 25345, 3345345)
+        // calculateSum(13, 2)
+        // calculateSum( 2)
+        // calculateSum( 2,2,3)
+
+
+
+        function calculateProduct(a=1, b=1){ // in case of product default value of argument is '1'
+            console.log(a*b);
+        }
+
+        calculateProduct(2,3)
+    </script>
+</body>
+</html>
