@@ -8,21 +8,124 @@
 </head>
 <body>
     <script>
-       // forEach = iterate through the elementof an array
-        let arr = [1, 2, 3]
-        let arr2 = ['akshay', 'aditya', 'adhi', 'abbhi']
+       // forEach = iterate through the elements of an array | you cannot manipulate element inside forEach loop | does not return anything
+
+
+        // let arr = [1, 2, 3]
+        // let arr2 = ['akshay', 'aditya', 'adhi', 'abhi']
+        // let arr3 = [[1, 2, 3], 'aditya', 2, true]
 
         
-
+//======================================================
     /*
-        1. forEach(function(element , index){
+        1. forEach(function(element , index) {
             //code
         })
     */
+//======================================================
 
-    arr2.forEach(function(element, index){
-        console.log(element, index)
+    /*
+        1. forEach(function(element , index) =>{
+            //code
+        })
+
+
+
+        let fun1 = function (element, index){
+
+        }
+        arr.forEach(fun1)
+    */
+//======================================================
+    // let fun2 = function (element, index){
+    //     console.log(index, element)
+
+    // }
+    // arr3.forEach(fun2)
+
+//==============================================
+    // arr2.forEach(function(element, index){
+    //     if(element === 'akshay')
+    //     console.log(index)
+    //     console.log(index, element)
+
+    // })
+//================================================
+    // arr2.forEach(function(element, index){
+    //     element = element +'AAAAAAAAA'
+
+    // })
+
+    // console.log(arr2); // cannot mmanipulate
+//================================================
+/*
+    2. Filter = Loop through each elements  and return the array of the element which match the specified condition.
+
+
+    -loop through each element
+    -return a conditon check
+    - return only those element which match the specified conditon
+    -no chnage in input arr
+
+
+    arr. filter(function (element, index){
+        return[conditon]
     })
+*/
+//================================================
+
+
+//    let arr = [5, 10, 14, 20, 25]
+
+//     let newArr = arr.filter(function(element, index){
+//         return element % 5 === 0
+//     })
+
+//     console.log(arr); 
+//     console.log(newArr); // filter all element which satisfyes the condition
+
+//================================================
+// filter those element which have length of 6    
+// let arr = ['akash', 'naveen', 'rama', 'rambali', 'sewtaa']
+
+// let newArr = arr.filter(function(element){
+//     return element.length === 6
+// })
+//   console.log(newArr);
+
+
+/*-----OR------*/
+
+    // let newArr = arr.filter(element => element.length ===6)
+ 
+    // console.log(newArr);  
+
+//================================================
+
+    /*
+        3. every = return true if all the elment in that array satisfy the given condition
+
+        -return condition
+        -if all element satisfy the condition retruns true else false
+    */
+//================================================
+// check if all the element devided by 10 then true else false
+    let arr = [300, 100, 400, 222, 550]
+
+    let isEveryElementDivisibleBy10 = arr.every(function(element, index){
+        return element % 2 === 0
+    })
+    console.log(isEveryElementDivisibleBy10);
+//-----------------------------------------
+
+let newarr2 = arr.every(function(element, index){
+        return element % 10 === 0
+    })
+
+    console.log(newarr2);
+
+
+//================================================
     </script>
     
 </body>
