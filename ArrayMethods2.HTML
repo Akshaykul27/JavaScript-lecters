@@ -18,7 +18,7 @@
         
 //======================================================
     /*
-        1. forEach(function(element , index) {
+        ###########1. forEach(function(element , index) {
             //code
         })
     */
@@ -59,8 +59,9 @@
     // console.log(arr2); // cannot mmanipulate
 //================================================
 /*
-    2. Filter = Loop through each elements  and return the array of the element which match the specified condition.
+###################2. Filter = Loop through each elements  and return the array of the element which match the specified condition.
 
+//================================================
 
     -loop through each element
     -return a conditon check
@@ -102,31 +103,118 @@
 
 //================================================
 
+    // let arr = ['vikas', 'rajesh', 'yash ','raj']
+    // let newarr = arr.filter(function(element, index){
+    //     return true
+    // })
+
+    // console.log(newarr)
+
+//================================================
+
+    // let arr = ['vikas', 'rajesh', 'yash ','raj']
+    // let newarr = arr.filter(function(element, index){
+    //     return false
+    // })
+
+    // console.log(newarr)
+
+
+
+
+//================================================
+
     /*
-        3. every = return true if all the elment in that array satisfy the given condition
+        ###############3. every = return true if all the element in that array satisfy the given condition
 
         -return condition
         -if all element satisfy the condition retruns true else false
     */
 //================================================
 // check if all the element devided by 10 then true else false
-    let arr = [300, 100, 400, 222, 550]
+//     let arr = [300, 100, 400, 222, 550]
 
-    let isEveryElementDivisibleBy10 = arr.every(function(element, index){
-        return element % 2 === 0
-    })
-    console.log(isEveryElementDivisibleBy10);
-//-----------------------------------------
+//     let isEveryElementDivisibleBy10 = arr.every(function(element, index){
+//         return element % 2 === 0
+//     })
+//     console.log(isEveryElementDivisibleBy10);
+// //-----------------------------------------
 
-let newarr2 = arr.every(function(element, index){
-        return element % 10 === 0
-    })
+// let newarr2 = arr.every(function(element, index){
+//         return element % 10 === 0
+//     })
 
-    console.log(newarr2);
+//     console.log(newarr2);
 
 
 //================================================
-    </script>
+    //######## 4. some =   return true if any one element in that array satisfy the given condition
+
+        // -return condition inside the code
+        // - returns true if any one element satisfy the condition  else false
+
+//================================================
+
+// let arr = ['vikas', 'rajesh', 'hardeep ','raj', 'aksh']
+
+// let flag = arr.some(function(element){
+        //     return element.length === 7 && element.length/2 ==='e'
+        // })
+
+        // if(flag == false){
+            //     console.log("no any element which matches the condition");
+            // } else{
+                //     console.log("there is aty least one element which matches the condition");
+                
+                // }
+ //================================================
+       /* ##### 4. map =  return the arraya of returned value  as per givn Code 
+
+        - loop through each element of array
+        - return the element or modified element 
+        - return an array of all modified element (both array length Same)
+        -no change in input array 
+  
+
+        let newarr = arr.map(function(element, input){
+            //code
+            return [xyz]
+        })
+        */
+ //================================================
+        
+        // let arr = ['akash', 'naveen', 'rama', 'rambali', 'sewtaa']
+        
+        // let newarr = arr.map(function(element,index){
+        //     return element  + "4"
+        // })
+
+        // console.log(newarr);
+
+ //--------------------------------------       
+     // you are given with an array of array, the nexted arrays have 2 element each i.e first n last name 
+        //return array of full name
+        
+        let arr = [['akshay','kulkarni'], ['chaitanya','kriishna']]
+        // let newarr =[]
+        // for(let i=0; i<arr.length; i++){
+        //     let fullName = arr[i][0] + ' ' + arr[i][1]
+        //     newarr.push(fullName)
+        // }
+        // console.log(newarr);
+//---------------------------------------------
+
+// let newarr = arr.map(function(element){
+    //     return element.join(' ')
+    // })
+    // console.log(newarr);
+    
+//---------------------------------------------
+    onsole.log(newarr);   
+    
+    
+//---------------------------------------------
+ </script>
     
 </body>
 </html>
