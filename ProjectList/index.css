@@ -1,0 +1,60 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(digital-white-background-with-binary-code-numbers_1017-25335.jpg);
+    background-size: 100%;
+    /* color: white; */
+    font-family: 'Inconsolata', monospace;
+    
+}
+#container{
+    display: flex;
+    /* padding-top: 20px; */
+    flex-direction: row;
+    /* padding: 3px 100px; */
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+header{
+    background-color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+    border: 7px solid black;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.HTML-CSS-Project, .My-Try-Projects, .JS-project{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding-top: 7px;
+    margin: 5px;
+   
+    height: 80%;
+    width: 100%;
+    /* color: white; */
+    font-size: 3vh;
+    font-weight: bold;
+    
+
+}
+h2{
+    font-weight: bold;
+    padding: 10px;
+}
+a, li{
+    color:  blue;
+    padding : 5px;
+    margin: 2px;
+
+}
