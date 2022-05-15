@@ -1,3 +1,23 @@
+let firstNameValid = document.getElementById('firstNameValid')
+let firstNameInvalid = document.getElementById('firstNameInvalid')
+
+let lastNameValid = document.getElementById('lastNameValid')
+let lastNameInvalid = document.getElementById('lastNameInvalid')
+
+let emailValid = document.getElementById('emailValid')
+let emailInvalid = document.getElementById('emailInvalid')
+
+let phoneValid = document.getElementById('phoneValid')
+let phoneInvalid = document.getElementById('phoneInvalid')
+
+let zipCodeValid = document.getElementById('zipCodeValid')
+let zipCodeInvalid = document.getElementById('zipCodeInvalid')
+
+let stateValid = document.getElementById('stateValid')
+let stateInvalid = document.getElementById('stateInvalid')
+
+let tNCInvalid = document.getElementById('tNCInvalid')
+
 
 
 
@@ -9,24 +29,10 @@ function validate(){
     let phoneNumber = document.getElementById("phoneNumber").value;
     let state = document.getElementById("state").value;
     let zipCode = document.getElementById("zipCode").value;
+    let tNCCheckBox = document.getElementById("tNCCheckBox").checked;
 
     // console.log('validate works')
     // console.log(firstName, lastName, email, phoneNumber, state, zipCode)
-
-    let firstNameValid = document.getElementById('firstNameValid')
-    let firstNameInvalid = document.getElementById('firstNameInvalid')
-
-    let lastNameValid = document.getElementById('lastNameValid')
-    let lastNameInvalid = document.getElementById('lastNameInvalid')
-    
-    let emailValid = document.getElementById('emailValid')
-    let emailInvalid = document.getElementById('emailInvalid')
-
-    let phoneValid = document.getElementById('phoneValid')
-    let phoneInvalid = document.getElementById('phoneInvalid')
-
-    let zipCodeValid = document.getElementById('zipCodeValid')
-    let zipCodeInvalid = document.getElementById('zipCodeInvalid')
 
 
 
@@ -76,6 +82,26 @@ function validate(){
         zipCodeInvalid.style.display = 'none'
 
     }
+    if(!tNCCheckBox){
+        tNCInvalid.style.display = 'block'
+    }else{
+        tNCInvalid.style.display = 'none'
+    }
+    // console.log(tNCChechBox);
 
-    
+    if (state === ''){
+        // console.log('error');
+        stateInvalid.style.display = 'block'
+        stateValid.style.display = 'none'
+    }else{
+        stateValid.style.display = 'block'
+        stateInvalid.style.display = 'none'
+
+    }
+    console.log(firstName);
+    console.log(lastName);
+    console.log(email);
+    console.log(phoneNumber);
+    console.log(state);
+    console.log(zipCode);
 }
