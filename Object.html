@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+ <script>
+     /*
+     Object are collection of element with named indexex
+     Used {}, 
+        -key and values are seperasted by " : "
+        -seperate key value paires with "," 
+        -keys always string type
+        -proprties:
+            keys in object which are used only for acess purpose are known as properties
+
+        -Methods:
+            Key and object which are used foraccess purpose are known as Mehods
+        
+        
+     let obj = {
+        name: 'shubham',
+        place: 'kanpur'
+     }
+     console.log(obj);
+    
+    */
+
+    let aditi = {
+        name: 'aditi',
+        age: 25,
+        likesIeccream: false
+    }
+    console.log(aditi);
+    console.log(aditi.name);
+    console.log(aditi.likesIeccream);
+    console.log(aditi['age']);
+
+    /*
+        Accessing values of an object using keys
+            1. console.log(aditi.age)
+            2. consolelog(aditi['age'])
+    */
+
+    // let car ={
+    //     passanger:5,
+    //     wheels: 4,
+    //     breand: 'TATA',
+    //     color: 'black'
+    // } 
+
+    // console.log(car);
+
+
+    let akshay = {
+        fullName :'Akshay Kulkarni',
+        place: 'Pune',
+        age: 25,
+        likeGamming: true
+    }
+    console.log(akshay);
+    console.log(akshay.place);
+    console.log( "name is " + akshay.fullName + " " +   "he is "  +  akshay.age  +  " " + 'years old' + " and he is from " + akshay.place)
+//---------------------------------------
+/*  JSON:
+
+
+*/
+//---------------------------------------
+    let str ='{"passanger":5,"wheels": 4}'
+    let obj = JSON.parse(str)
+    console.log(obj);
+
+ </script>   
+</body>
+</html>
+<!-- 
+    JSON = Javascript object natation
+    JSON.stringify - Convert object to string
+ -->
