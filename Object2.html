@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,28 +11,146 @@
         //     : 1,
         //     b:5
         // }
-        
+
         // console.log(x);
         // x.a = 10 // value change
         // console.log(x);
         // x['b'] =20// value change 2nd type
         // console.log(x);
-    
+
         // x.c = 50// new key added
         // console.log(x);a
 
-        // arrays as balue inside object
-        let bank = {
-            brance: 'mumbai',
-            ifscCode: 34314,
-            name: 'india bank',
-            isOperational: true,
-            accountsAvailable: {'saving', 'current', 'PPF'}
+
+        ////////////Nested Object : Object as a value inside another object
+        // let sunil = {
+        //     firstName : 'sunil',
+        //     lastname : 'yadav',
+        //     batch : 8,
+        //     likeGaming : true,
+        //     markSecured : {science:82,
+        //         math : 98,English : 86, Hindi : 79, marathi : 99}
+        // }
+
+        // console.log(sunil);
+        // console.log(sunil.markSecured);
+        // console.log(sunil.markSecured.marathi);
+
+
+
+        //////////// Arrays as value inside object(Object inside Arrays)
+        // let bank = {
+        //     brance: 'mumbai',
+        //     ifscCode: 34314,
+        //     name: 'india bank',
+        //     isOperational: true,
+        //     accountsAvailable: ['saving', 'current', 'PPF']
+        // }
+
+
+        // let sunil = {
+        //     firstName : 'sunil',
+        //     lastname : 'yadav',
+        //     batch : 8,
+        //     likeGaming : true,
+        //     hobbies : ['swiming', 'dancing', 'gaming']
+        // }
+        // console.log(sunil);
+        // console.log(sunil.hobbies);
+        // console.log(sunil.hobbies[2]);
+        ////////---------------------------------------------------
+
+//         let hardeep = {
+//             firstName: 'hardeep',
+//             lastname: 'jaat',
+//             batch: 18,
+//             likeGaming: false,
+
+//         }
+
+//         let sunil = {
+//             firstName: 'sunil',
+//             lastname: 'yadav',
+//             batch: 8,
+//             likeGaming: true,
+
+//         }
+
+//         let rushabh = {
+//             firstName: 'rushabh',
+//             lastname: 'maurya',
+//             batch: 9,
+//             likeGaming: true,
+
+//         }
+
+// //=============================================
+//         let students = [{
+//             firstName: 'hardeep',
+//             lastname: 'jaat',
+//             batch: 18,
+//             likeGaming: false,
+
+//         },{
+//                 firstName: 'sunil',
+//                 lastname: 'yadav',
+//                 batch: 8,
+//                 likeGaming: true,
+
+//             },{
+//                 firstName: 'rushabh',
+//                 lastname: 'maurya',
+//                 batch: 9,
+//                 likeGaming: true,
+
+//             }]
+
+
+//             console.log(students[1].batch);
+//====================================================
+
+    // let students = {
+    //     name : 'ak',
+    //     isGraduated : true, 
+    //     hobbies : ['swiming', 'gaming'],
+    //     noOfcompaniesApplied : 2
+    // }
+
+    // console.log(students);
+
+
+    let students = {
+        name : {
+            firstName : 'akshay',
+            lastName : 'Kulkarni',
+        },
+        isGraduated : true, 
+        hobbies : ['swiming', 'gaming'],
+        noOfcompaniesApplied : {
+            google : false,
+            amezon : true,
+            tata : true
         }
+    }
+
+    console.log(students);
+
+
     </script>
 </head>
 
 <body>
-    
+
 </body>
+
 </html>
+
+<!--
+        Create an objectfor students:
+        -name
+        -isGraduated
+        -hobbies
+        -NoOfConpaniesApply
+
+
+ -->

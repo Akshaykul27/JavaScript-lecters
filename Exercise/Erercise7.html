@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <script>
+
+// return arrays of Object who likes gamming
+        let students =
+            [
+            {
+                name: 'rama',
+                batch: 8,
+                likeGamming: true,
+            }, {
+                name: 'ishvar',
+                batch: 6,
+                likeGamming: false,
+            }, {
+                name: 'vishwanath',
+                batch: 10,
+                likeGamming: false,
+            }, {
+                name: 'swapnil',
+                batch: 8,
+                likeGamming: false,
+            }, {
+                name: 'sampath',
+                batch: 9,
+                likeGamming: true,
+            }
+            ]
+    // Method 1 - for loop 
+        // let studentsLikesGaming = []
+        // for(let i = 0; i < students.length; i++ ){
+        //     if(students[i].likeGamming == true){
+        //         studentsLikesGaming.push(students[i])
+        //     }
+        // }
+        // console.log(studentsLikesGaming);
+
+    //Method 2 - for each loop
+        //     let studentsLikesGaming = []
+        //     students.forEach(function(student, index){
+        //         if(student.likeGamming == true)
+        //         studentsLikesGaming.push(element)
+        //     })
+            
+        //   console.log(studentsLikesGaming);
+
+    // Method 3 - filter
+            // let studentsLikesGaming = students.filter(function(student, index){
+            //     return student.likeGamming === true
+            // })
+            
+            // console.log(studentsLikesGaming);
+            
+    // Method 3 - filter(improvise)
+    
+            // let studentsLikesGaming = students.filter((student) => student.likeGamming )
+            
+            
+            // console.log(studentsLikesGaming);
+ // sturnts who likes gaming and from batch 9
+
+            let studentsLikesGaming = students.filter((student) => student.likeGamming && student.batch === 9 )
+            
+            console.log(studentsLikesGaming);
+            
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
