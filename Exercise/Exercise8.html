@@ -101,9 +101,30 @@
                 name: 'shyam',
                 batch: 9,
                 averageMarks: 00
-            }
+            } 
         ]
         */
+
+    /////Ans
+            let studentsWithCalculateMarks = []
+
+            for(let i=0; i< students.length; i++){
+                let student = students[i]
+                let obj = {}
+                obj.name = student.name
+                obj.batch = student.batch
+                let sum = 0
+                for(let j=0; j<Object.values(student.marks).length; j++){
+                    sum += Object.values(student.marks)[j]
+                }
+
+                obj.averageMarks = sum /5;
+                studentsWithCalculateMarks.push(obj);
+
+            }
+
+            console.log(studentsWithCalculateMarks);
+
     </script>
 </head>
 
