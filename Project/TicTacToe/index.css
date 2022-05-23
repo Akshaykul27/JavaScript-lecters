@@ -1,0 +1,24 @@
+h1,h2, h3{
+    text-align: center;
+
+}
+h1{
+    font-size: 2.5em;
+}
+
+.row{
+    display: flex;
+    width : 606px;
+    height: 606px;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: "permanant marker";
+}
+.col{
+    width: 200px;
+    height: 200px;
+    background-color: #f7bf81;
+    border: 1px solid black;
+    font-size: 6em;
+    text-align: center;
+}

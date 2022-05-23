@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 4 - Object Methods</title>
+    <script>
+        // let obj = {
+        //     mane : 'ram',
+        //     batch : 10,
+        //     likesReadingBooks : true,
+        //     sayHi : function(){
+        //         console.log('HI ');          }
+        // }
+
+        // obj.sayHi()
+// \\-----------------------------------------
+        // let obj = {
+        //     mane : 'ram',
+        //     batch : 10,
+        //     likesReadingBooks : true,
+        //     sayHi : function(){
+        //         return Hiiii          }
+        // }
+
+        // console.log(obj.sayHi());
+//--------------------------------------------
+        // let ram = {
+        //     name : 'ram',
+        //     batch : 10,
+        //     likesReadingBooks : true,
+        //     sayHi : function(name){
+        //         console.log('hiii ' + name);        
+        //     }
+        // }
+
+        // ram.sayHi('naveen')
+        // ram.sayHi('akshay')
+
+//--------------------------------------------
+//      this Keyword  : refers to the owner of that object
+            
+//--------------------------------------------
+
+         let obj = {
+            name : 'ram',
+            batch : 10,
+            likesReadingBooks : false,
+            sayBatchNo : function(){
+                console.log("I am From Batch  " + this.batch);
+            },
+            sayIntroduction : function(){
+                console.log("my name is " + this.name + ". my batch number is " + this.batch + ", and I " + (this.likesReadingBooks ? 'like reading books ' : " dont like reading books"));
+            }
+        }
+
+        obj.sayIntroduction()
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- 
+
+        //- you dont have access to this keyword inside arrow function 
+        //- arrow function are not hoisted
+        //this keyword in globle scope refers to your window object, any property/ method of windowobject can be accessed directly.
+        
+ -->
